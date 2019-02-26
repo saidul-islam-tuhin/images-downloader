@@ -1,5 +1,7 @@
 # Image Downloader
 
+[![Python Version](https://img.shields.io/badge/python-3.5-brightgreen.svg)](https://python.org)
+
 A python script which download image from given link and store into local storage in JPEG format.
 
 ## Getting Started
@@ -11,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 * **pipenv** :  
     ```
-    pip install pipenv`
+    pip install pipenv
     ```
                  
 
@@ -19,23 +21,23 @@ These instructions will get you a copy of the project up and running on your loc
 
 * Clone or download this repository.
 
-* ```console
+* ```
   cd images-downloader
   ```
 * Activate virtual environment:
 
-    ```console
+    ```
      pipenv shell 
     ```
 * Installed Packages from Pipfile:
 
-    ```console
+    ```
     pipenv install 
     ```
 * Execute script:
 
 
-    ```console
+    ```
      python images_downloader.py
     ```
 
