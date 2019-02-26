@@ -6,6 +6,8 @@ name = "pypi"
 [dev-packages]
 
 [packages]
+pillow = "*"
+requests = "*"
 
 [requires]
 python_version = "3.5"
