@@ -44,6 +44,7 @@ def file_read(file_path):
 
 	return urls
 
+
 if __name__ == '__main__':
-	
-	image_downloader_func()
+    urls = file_read(Path.cwd().joinpath('images.txt'))
+    print(urls)
