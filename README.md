@@ -21,6 +21,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 * Clone or download this repository.
 
+    ![folder Structure](https://raw.githubusercontent.com/saidul-islam-tuhin/images-downloader/screenshot-branch/screenshot/image_downloader_tree.png "Folder structure")
+
 * ```
   cd images-downloader
   ```
@@ -29,11 +31,15 @@ These instructions will get you a copy of the project up and running on your loc
     ```
      pipenv shell 
     ```
-* Installed Packages from Pipfile:
+* Installed Packages from Pipfile :
 
     ```
     pipenv install 
     ```
+    After installed packages there have create Pipfile.lock.
+
+
+    ![Pipfile.lock create](https://raw.githubusercontent.com/saidul-islam-tuhin/images-downloader/screenshot-branch/screenshot/pipfile_create.png "Pipfile.lock create")
 * Execute script:
 
 
@@ -44,6 +50,8 @@ These instructions will get you a copy of the project up and running on your loc
 ## Expected Output
 
 After executing images_downloader script there have been create **Images** folder where image are stored in JPEG format.
+![Output](https://raw.githubusercontent.com/saidul-islam-tuhin/images-downloader/screenshot-branch/screenshot/output.png "Ouput figure")
+
 
 ## Running the tests
 
