@@ -39,7 +39,6 @@ def file_read(file_path):
 		logger.error(e)
 	
 	except Exception as e:
-		print(type(e).__name__)
 		logger.error(e)
 
 	return urls
@@ -66,7 +65,6 @@ def image_downloader_func(input_file_path='', save_images_path=''):
 		
 
 	image_urls = file_read(input_file_path)
-	print(image_urls)
 
 
 	if image_urls:
