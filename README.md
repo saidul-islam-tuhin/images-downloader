@@ -50,7 +50,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## Expected Output
 
 After executing images_downloader script there have been create **Images** folder where image are stored in JPEG format.
-![Output](https://raw.githubusercontent.com/saidul-islam-tuhin/images-downloader/screenshot-branch/screenshot/output.png "Ouput figure")
+![Output](https://raw.githubusercontent.com/saidul-islam-tuhin/images-downloader/screenshot-branch/screenshot/output.png "Output figure")
 
 
 ## Running the tests
