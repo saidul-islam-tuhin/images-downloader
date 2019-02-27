@@ -49,9 +49,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Expected Output
 
-After executing images_downloader script there have been create **Images** folder where image are stored in JPEG format.
+After executing images_downloader script automatically  there have been created **Images** folder where image are stored in JPEG format.
+
 ![Output](https://raw.githubusercontent.com/saidul-islam-tuhin/images-downloader/screenshot-branch/screenshot/output.png "Output figure")
 
+In **debug.log**, we can see which image are downloaded and how many are remain in real time.
+
+![debug.log gif](https://raw.githubusercontent.com/saidul-islam-tuhin/images-downloader/screenshot-branch/screenshot/debug1.gif "debug.log")
 
 ## Running the tests
 
