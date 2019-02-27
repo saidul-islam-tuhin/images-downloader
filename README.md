@@ -44,7 +44,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 
     ```
-     python images_downloader.py
+     python images_downloader.py images.txt
     ```
 
 ## Expected Output
