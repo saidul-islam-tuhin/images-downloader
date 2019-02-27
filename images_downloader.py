@@ -1,5 +1,6 @@
 import io
 import os
+import sys
 import logging
 from pathlib import Path
 
@@ -19,20 +20,20 @@ logger = logging.getLogger(__name__)
 
 
 
-def file_read(file_path):
+def file_read(input_file):
 	"""
 	Read all link in line by line from file.
 
-	:param file_path: File path which is instance of Path class
-	:type file_path : Instance of Path class
+	:param input_file: File name or file path
+	:type input_file : str
 	:returns: List of image download url
 	:rtype: list
 	"""
 	
 	urls = list()
-
+	
 	try:
-		with file_path.open('r') as f:
+		with open(input_file, 'r') as f:
 			urls = f.read().splitlines()
 	
 	except (OSError, IOError) as e:
@@ -41,23 +42,16 @@ def file_read(file_path):
 	
 	except Exception as e:
 		logger.error(e)
-
+	
 	return urls
 
 
-def image_downloader_func(input_file_path='', save_images_path=''):
+def image_downloader_func(save_images_path=''):
 	"""
 	Download image in JPEG format from given links.
 
-	:param input_file_path: Text file path where image link stored
-	:param output_file_path: Folder path where downloaded image will be saved.
+	:param save_images_path: Folder path where downloaded image will be saved.
 	"""
-
-	if input_file_path:
-		input_file_path = Path(input_file_path)
-	else:
-		input_file_path = Path.cwd().joinpath('images.txt')
-
 
 	if save_images_path:
 		save_images_path = Path(save_images_path)
@@ -65,8 +59,7 @@ def image_downloader_func(input_file_path='', save_images_path=''):
 		save_images_path = Path.cwd().joinpath('Images')
 		
 
-	image_urls = file_read(input_file_path)
-
+	image_urls = file_read(sys.argv[1]) # Take file from command line argument
 
 	if image_urls:
 		total_urls = len(image_urls)
