@@ -37,6 +37,7 @@ def file_read(file_path):
 	
 	except (OSError, IOError) as e:
 		logger.error(e)
+		raise FileNotFoundError(e)
 	
 	except Exception as e:
 		logger.error(e)
