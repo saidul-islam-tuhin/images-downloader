@@ -59,4 +59,6 @@ In **debug.log**, we can see which image are downloaded and how many are remain 
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+```
+python -m unittest test_images_downloader.py
+```
